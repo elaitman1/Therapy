@@ -16,6 +16,7 @@ import { unifiedConditional } from 'unified-conditional'
 
 const jiti = createJiti(fileURLToPath(import.meta.url))
 jiti('./src/env/client.ts')
+jiti('./src/env/server.ts')
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -30,7 +31,8 @@ const nextConfig = {
       'postcss.config.mjs',
       'prettier.config.mjs',
       'tailwind.config.ts'
-    ]
+    ],
+    ignoreDuringBuilds: true
   },
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx']
 }

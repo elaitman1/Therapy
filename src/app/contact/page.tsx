@@ -1,70 +1,14 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { type ComponentPropsWithoutRef, type FC, useId } from 'react'
+import type { FC } from 'react'
 
 import { Border } from '@/components/Border'
-import { Button } from '@/components/Button'
+import { ContactForm } from '@/components/ContactForm'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { RootLayout } from '@/components/RootLayout'
 import { SocialMedia } from '@/components/SocialMedia'
-
-const TextInput: FC<ComponentPropsWithoutRef<'input'> & { label: string }> = ({
-  label,
-  ...props
-}) => {
-  const id = useId()
-
-  return (
-    <div className="group relative z-0 transition-all focus-within:z-10">
-      <input
-        type="text"
-        id={id}
-        {...props}
-        placeholder=" "
-        className="peer block w-full border border-neutral-300 bg-transparent px-6 pt-12 pb-4 text-base/6 text-neutral-950 ring-4 ring-transparent transition group-first:rounded-t-2xl group-last:rounded-b-2xl focus:border-neutral-950 focus:ring-neutral-950/5 focus:outline-hidden"
-      />
-      <label
-        htmlFor={id}
-        className="pointer-events-none absolute top-1/2 left-6 -mt-3 origin-left text-base/6 text-neutral-500 transition-all duration-200 peer-not-placeholder-shown:-translate-y-4 peer-not-placeholder-shown:scale-75 peer-not-placeholder-shown:font-semibold peer-not-placeholder-shown:text-neutral-950 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-neutral-950"
-      >
-        {label}
-      </label>
-    </div>
-  )
-}
-
-const ContactForm: FC = () => {
-  return (
-    <FadeIn className="lg:order-last">
-      <form>
-        <h2 className="font-display text-base font-semibold text-neutral-950">
-          Fill out the form below
-        </h2>
-        <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
-          <TextInput label="Name" name="name" autoComplete="name" />
-          <TextInput
-            label="Email"
-            type="email"
-            name="email"
-            autoComplete="email"
-          />
-          <TextInput
-            label="Company"
-            name="company"
-            autoComplete="organization"
-          />
-          <TextInput label="Phone" type="tel" name="phone" autoComplete="tel" />
-          <TextInput label="Message" name="message" />
-        </div>
-        <Button type="submit" className="mt-10">
-          Send message
-        </Button>
-      </form>
-    </FadeIn>
-  )
-}
 
 const ContactDetails: FC = () => {
   return (

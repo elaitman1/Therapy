@@ -2,6 +2,7 @@ import '@/styles/tailwind.css'
 
 import type { Metadata } from 'next'
 import type { FC, PropsWithChildren } from 'react'
+import { Toaster } from 'sonner'
 
 import { ABSOLUTE_ROUTES } from '@/constants/routes'
 import { clientEnv } from '@/env/client'
@@ -56,7 +57,10 @@ export const metadata: Metadata = {
 const Layout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <html lang="en" className="h-full text-base antialiased">
-      <body className="flex min-h-full flex-col">{children}</body>
+      <body className="flex min-h-full flex-col">
+        <Toaster />
+        {children}
+      </body>
     </html>
   )
 }

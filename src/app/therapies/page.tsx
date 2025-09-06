@@ -73,7 +73,7 @@ const Work: FC = async () => {
     <RootLayout>
       <PageIntro
         eyebrow="Therapies"
-        title="Therapy for the Good, Bad, and Uncomfortable"
+        title="Mr.E Therapy - Sheddling Light on Your Life's Mysteries"
       >
         <p>
           Therapy should be a place where you can say the good, bad, and the

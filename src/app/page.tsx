@@ -55,33 +55,6 @@ const TherapyOptions: FC<{
   )
 }
 
-const Services: FC = () => {
-  return (
-    <Container className="mt-24 sm:mt-32 lg:mt-40">
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-        <SectionIntro title="What We Offer">
-          <p>
-            At Eric Laitman Therapy, we provide a range of services to support
-            your mental health and well-being. Our approach is tailored to meet
-            your individual needs, ensuring that you receive the best possible
-            care.
-          </p>
-        </SectionIntro>
-
-        <FadeIn>
-          <Image
-            src="/services.jpg"
-            alt="Services image"
-            width={500}
-            height={400}
-            className="h-auto w-full rounded-3xl object-cover md:max-w-md md:object-contain lg:max-w-lg lg:justify-self-end"
-          />
-        </FadeIn>
-      </div>
-    </Container>
-  )
-}
-
 const Home: FC = async () => {
   const allTherapies = await loadTherapies()
 
@@ -96,15 +69,31 @@ const Home: FC = async () => {
               Transforming Therapy Together
             </h1>
             <p className="mt-6 text-xl text-neutral-600">
-              Therapy should be a place where you can say the good, bad, and the
-              uncomfortable - even about your therapist. No need to package
-              things nicely. I’m all ears, judgment free to celebrate the gift
-              of you.
+              Therapy should be a place where you can say what’s on your mind
+              without fear of judgment. During our sessions, you're in the
+              driver's seat, and I'm right there beside you, your family and/or
+              partner as we explore the twists and turns of your inner world(s).
+              Along the way, I draw on what I call my 'superpowers' which are
+              the combinations of my lived experience with OCD and ADHD which
+              give me a unique ability to pick up on subtle patterns and details
+              along with my trainings in psychoanalysis, CBT (ACT, ERP), somatic
+              work, dissociation, etc. which enable me to step back and see the
+              bigger picture as we get to the root of issues.
             </p>
             <p className="mt-6 text-xl text-neutral-600">
-              My style is to alleviate distress providing you tools in CBT, ERP
-              and ACT as well using Psychodynamic therapy to fortify from
-              within.{' '}
+              I've also lived a few lives before becoming a therapist. My
+              background spans careers in banking & software,counseling in
+              school systems in Compton,working community clinics,teaching yoga
+              and supporting veterans through counseling. These experiences help
+              me connect with clients who are navigating major life
+              transitions,searching for a deeper sense of purpose.
+            </p>
+            <p className="mt-6 text-xl text-neutral-600">
+              Finally, I welcome feedback like “do more of this” or “less of
+              that” because therapy isn’t like other relationships — you don’t
+              need to worry about formalities or protecting my feelings.
+              Together, we won’t just manage symptoms; we’ll work toward real,
+              lasting change. Looking forward to working with you!
             </p>
             <p className="mt-6 text-xl text-neutral-600">Specialties:</p>
             <ul className="mt-2 list-disc pl-4 text-xl text-neutral-600">
@@ -131,8 +120,6 @@ const Home: FC = async () => {
       </Container>
 
       <TherapyOptions therapies={therapies} />
-
-      <Services />
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"

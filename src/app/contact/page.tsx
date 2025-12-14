@@ -18,10 +18,10 @@ const ContactDetails: FC = () => {
       </h2>
       <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
         {[
-          ['Appointment', 'appointments@erictherapy.com'],
-          ['Information', 'info@erictherapy.com']
+          ['Appointment', 'elaitman1@gmail.com'],
+          ['Information', 'elaitman1@gmail.com']
         ].map(([label, email]) => (
-          <div key={email}>
+          <div key={label}>
             <dt className="font-semibold text-neutral-950">{label}</dt>
             <dd>
               <Link

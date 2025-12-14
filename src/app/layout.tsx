@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: {
     template: '%s - Eric Laitman Therapy',
     default:
-      'Eric Laitman Therapy - Therapy for the Good, Bad, and Uncomfortable'
+      'Eric Laitman Therapy - Held. Seen. Unfiltered. I notice the patterns others might miss.'
   },
   appleWebApp: {
     title: 'Eric Laitman Therapy'
@@ -23,12 +23,12 @@ export const metadata: Metadata = {
     title: {
       template: '%s - Eric Laitman Therapy',
       default:
-        'Eric Laitman Therapy - Therapy for the Good, Bad, and Uncomfortable'
+        'Eric Laitman Therapy - Held. Seen. Unfiltered. I notice the patterns others might miss.'
     },
     description:
       'Therapy should be a place where you can say the good, bad, and the uncomfortable - even about your therapist. No need to package things nicely. I’m all ears, judgment free to celebrate the gift of you.',
     url: ABSOLUTE_ROUTES.HOME,
-    images: '/hero.jpeg',
+    images: '/meta.jpeg',
     type: 'website'
   },
   twitter: {
@@ -36,11 +36,11 @@ export const metadata: Metadata = {
     title: {
       template: '%s - Eric Laitman Therapy',
       default:
-        'Eric Laitman Therapy - Therapy for the Good, Bad, and Uncomfortable'
+        'Eric Laitman Therapy - Held. Seen. Unfiltered. I notice the patterns others might miss.'
     },
     description:
       'Therapy should be a place where you can say the good, bad, and the uncomfortable - even about your therapist. No need to package things nicely. I’m all ears, judgment free to celebrate the gift of you.',
-    images: '/hero.jpeg'
+    images: '/meta.jpeg'
   },
   robots: {
     index: true,

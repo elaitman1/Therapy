@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     description:
       'Therapy should be a place where you can say the good, bad, and the uncomfortable - even about your therapist. No need to package things nicely. I’m all ears, judgment free to celebrate the gift of you.',
     url: ABSOLUTE_ROUTES.HOME,
-    images: '/meta.jpeg',
+    images: '/hero.jpeg',
     type: 'website'
   },
   twitter: {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     },
     description:
       'Therapy should be a place where you can say the good, bad, and the uncomfortable - even about your therapist. No need to package things nicely. I’m all ears, judgment free to celebrate the gift of you.',
-    images: '/meta.jpeg'
+    images: '/hero.jpeg'
   },
   robots: {
     index: true,
